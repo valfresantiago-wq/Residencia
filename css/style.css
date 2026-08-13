@@ -181,8 +181,7 @@ a {
             rgba(12, 17, 14, 0.30) 58%,
             rgba(12, 17, 14, 0.05) 100%
         ),
-        url('images/hero-residencia.png') center/cover no-repeat;
-
+        url('../archivo_00000000da34820eb2fea433289437ca.png') center/cover no-repeat;
     z-index: 0;
 }
 
