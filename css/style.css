@@ -172,9 +172,17 @@ a {
 .hero-background {
     position: absolute;
     inset: 0;
+
     background:
-        linear-gradient(135deg, rgba(26, 77, 62, 0.88) 0%, rgba(26, 77, 62, 0.70) 100%),
-        url('/images/hero-bg.jpg') center/cover no-repeat;
+        linear-gradient(
+            90deg,
+            rgba(12, 17, 14, 0.88) 0%,
+            rgba(12, 17, 14, 0.72) 32%,
+            rgba(12, 17, 14, 0.30) 58%,
+            rgba(12, 17, 14, 0.05) 100%
+        ),
+        url('images/hero-residencia.png') center/cover no-repeat;
+
     z-index: 0;
 }
 
