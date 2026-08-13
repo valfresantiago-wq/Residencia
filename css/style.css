@@ -186,6 +186,19 @@ a {
     z-index: 0;
 }
 
+.hero-logo {
+    position: absolute;
+    top: 30px;
+    left: 5.5%;
+    z-index: 3;
+    display: block;
+}
+
+.hero-logo img {
+    width: 260px;
+    height: auto;
+    display: block;
+}
 .hero-content {
     position: relative;
     z-index: 1;
