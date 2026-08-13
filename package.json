@@ -1,0 +1,8 @@
+{
+  "name": "residencia-web",
+  "version": "1.0.0",
+  "description": "Sitio web estático para Residencia de Adultos Mayores",
+  "scripts": {
+    "start": "npx serve . -l 10000"
+  }
+}
