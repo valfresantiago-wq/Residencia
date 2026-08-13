@@ -1,85 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Residencia [EUFEMIA] · Cuidado y Bienestar para Adultos Mayores</title>
+    <meta name="description" content="Residencia geriátrica en Córdoba. Atención personalizada 24hs, ambientes cálidos y profesionales capacitados. Contactanos para visitarnos."/>
     
-    <!-- 1. SEO BÁSICO: Título y Descripción -->
-    <title>Residencia [Nombre] · Cuidado y Bienestar para Adultos Mayores en Córdoba</title>
-    <meta name="description" content="Encontrá el lugar ideal para tus padres en Córdoba. Atención personalizada, 24hs, en un entorno cálido y familiar. Conocé nuestros servicios y planes.">
-    <meta name="robots" content="index, follow">
-
-    <!-- 2. OPEN GRAPH (Para compartir en redes sociales) -->
-    <meta property="og:title" content="Residencia [Nombre] · Un hogar para quienes más querés">
-    <meta property="og:description" content="Cuidado integral para adultos mayores en Córdoba. Ambientes cálidos, atención profesional y mucha contención.">
-    <meta property="og:image" content="https://tusitio.com/images/og-image.jpg">
-    <meta property="og:url" content="https://tusitio.com">
-    <meta property="og:type" content="website">
-
-    <!-- 3. SCHEMA MARKUP (Datos estructurados para Google) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MedicalOrganization",
-      "name": "Residencia [Nombre]",
-      "description": "Centro de cuidado y atención para adultos mayores en Córdoba.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Calle Ejemplo 1234",
-        "addressLocality": "Córdoba",
-        "addressRegion": "Córdoba",
-        "addressCountry": "AR"
-      },
-      "telephone": "+543511234567",
-      "url": "https://tusitio.com"
-    }
-    </script>
-
-    <!-- 4. FUENTES Y ESTILOS (Carga rápida y progresiva) -->
+    <!-- Fuentes: Inter (moderna) y Playfair (elegante) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     
-    <!-- 5. ESTILOS CRÍTICOS (Inline para que el Hero cargue rápido) -->
-    <style>
-        /* Reset básico y variables de diseño */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        img { max-width: 100%; height: auto; display: block; }
-        a { text-decoration: none; color: inherit; }
-    </style>
-
-    <!-- 6. ICONO Y FAVICON -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
     <!-- ========================================== -->
-    <!-- CABECERA (HEADER) - Navegación principal    -->
+    <!-- CABECERA (Header)                           -->
     <!-- ========================================== -->
-    <header class="site-header" role="banner">
+    <header class="site-header">
         <div class="container header-grid">
-            <!-- Logo -->
             <div class="logo">
-                <a href="/" aria-label="Inicio - Residencia [Nombre]">
-                    <img src="/images/logo.svg" alt="Logo Residencia [Nombre]" width="180" height="50">
+                <a href="/">
+                    <img src="/images/logo.svg" alt="Residencia [Nombre]" width="160" height="45">
                 </a>
             </div>
-
-            <!-- Navegación -->
             <nav class="main-nav" aria-label="Navegación principal">
                 <ul class="nav-list">
-                    <li><a href="/#la-residencia">La Residencia</a></li>
-                    <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="/habitaciones">Habitaciones</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contacto" class="btn btn-primary">Contacto</a></li>
+                    <li><a href="#la-residencia">La Residencia</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#habitaciones">Habitaciones</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto" class="btn btn-primary">Contacto</a></li>
                 </ul>
             </nav>
-
-            <!-- Botón de menú móvil (Hamburguesa) -->
-            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <button class="menu-toggle" aria-label="Abrir menú">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -88,17 +43,15 @@
     </header>
 
     <!-- ========================================== -->
-    <!-- CONTENIDO PRINCIPAL (MAIN)                  -->
+    <!-- CONTENIDO PRINCIPAL                        -->
     <!-- ========================================== -->
-    <main id="main-content">
+    <main>
 
-        <!-- ====== SECCIÓN 1: HERO ====== -->
-        <section class="hero" aria-labelledby="hero-title">
-            <div class="hero-background">
-                <!-- Imagen de fondo (se carga con CSS como background-image) -->
-            </div>
+        <!-- ====== HERO ====== -->
+        <section class="hero" id="inicio">
+            <div class="hero-background"></div>
             <div class="container hero-content">
-                <h1 id="hero-title" class="hero-title">
+                <h1 class="hero-title">
                     Un hogar para <br>
                     <span class="hero-title-highlight">quienes más querés</span>
                 </h1>
@@ -106,179 +59,235 @@
                     Cuidado integral, calidez y atención personalizada para tus padres en el corazón de Córdoba.
                 </p>
                 <div class="hero-actions">
-                    <a href="/contacto" class="btn btn-primary btn-lg">Agendar una visita</a>
-                    <a href="/servicios" class="btn btn-outline btn-lg">Conocer más</a>
+                    <a href="#contacto" class="btn btn-primary btn-lg">Agendar una visita</a>
+                    <a href="#la-residencia" class="btn btn-outline btn-lg">Conocer más</a>
                 </div>
             </div>
         </section>
 
-        <!-- ====== SECCIÓN 2: ESTADÍSTICAS ====== -->
-        <section class="stats" aria-label="Estadísticas de la residencia">
-            <div class="container stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number" data-count="10">0</span>
-                    <span class="stat-label">Años de experiencia</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="150">0</span>
-                    <span class="stat-label">Familias que confían</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="24">0</span>
-                    <span class="stat-label">Atención las 24hs</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number" data-count="100">0</span>
-                    <span class="stat-label">% de satisfacción</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- ====== SECCIÓN 3: SERVICIOS DESTACADOS ====== -->
-        <section class="services" aria-labelledby="services-title">
+        <!-- ====== LA RESIDENCIA ====== -->
+        <section class="section about" id="la-residencia">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="services-title">Nuestros Servicios</h2>
+                    <h2>La Residencia</h2>
+                    <p class="section-subtitle">Un lugar donde la experiencia y el cariño se encuentran</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>Fundada en 2015, nuestra residencia nació del sueño de crear un espacio donde los adultos mayores puedan vivir con dignidad, alegría y autonomía. Contamos con un equipo interdisciplinario que brinda atención personalizada 24 horas al día.</p>
+                        <p>Nuestro enfoque se centra en la estimulación cognitiva, el bienestar emocional y la integración familiar, en un ambiente que combina la calidez de un hogar con la seguridad de un centro especializado.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="/images/residencia.jpg" alt="Edificio de la residencia" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SERVICIOS ====== -->
+        <section class="section services" id="servicios">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nuestros Servicios</h2>
                     <p class="section-subtitle">Cuidado integral en un ambiente de contención y respeto</p>
                 </div>
                 <div class="services-grid">
-                    <!-- Servicio 1 -->
                     <article class="service-card">
                         <div class="service-icon">🫶</div>
                         <h3>Cuidados 24hs</h3>
                         <p>Acompañamiento profesional con enfermería y geriatría disponible todos los días del año.</p>
-                        <a href="/servicios/cuidados" class="service-link">Ver más →</a>
                     </article>
-                    <!-- Servicio 2 -->
                     <article class="service-card">
                         <div class="service-icon">🧠</div>
                         <h3>Estimulación Cognitiva</h3>
                         <p>Talleres diseñados para mantener activa la mente, la memoria y las habilidades sociales.</p>
-                        <a href="/servicios/estimulacion" class="service-link">Ver más →</a>
                     </article>
-                    <!-- Servicio 3 -->
                     <article class="service-card">
                         <div class="service-icon">🍲</div>
                         <h3>Nutrición Personalizada</h3>
                         <p>Menús equilibrados y adaptados a las necesidades de cada residente, con supervisión médica.</p>
-                        <a href="/servicios/nutricion" class="service-link">Ver más →</a>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon">🤝</div>
+                        <h3>Acompañamiento Social</h3>
+                        <p>Actividades recreativas, salidas programadas y un entorno que fomenta las relaciones interpersonales.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ====== SECCIÓN 4: BLOG / RECURSOS ====== -->
-        <section class="blog-preview" aria-labelledby="blog-title">
+        <!-- ====== HABITACIONES ====== -->
+        <section class="section rooms" id="habitaciones">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="blog-title">Recursos para tu familia</h2>
-                    <p class="section-subtitle">Consejos y guías para acompañar a tus padres en esta nueva etapa</p>
+                    <h2>Nuestras Habitaciones</h2>
+                    <p class="section-subtitle">Espacios diseñados para el confort y la tranquilidad</p>
                 </div>
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <img src="/images/blog-guia.jpg" alt="Guía para elegir una residencia" loading="lazy">
-                        <div class="blog-card-content">
-                            <span class="blog-category">Guía</span>
-                            <h3>Cómo elegir la residencia ideal</h3>
-                            <p>Una guía paso a paso para tomar la mejor decisión para tus padres.</p>
-                            <a href="/blog/como-elegir-residencia" class="service-link">Leer más →</a>
+                <div class="rooms-grid">
+                    <article class="room-card">
+                        <img src="/images/habitacion-individual.jpg" alt="Habitación individual" loading="lazy">
+                        <div class="room-card-content">
+                            <h3>Habitación Individual</h3>
+                            <p>Espacio privado con baño privado, orientación al jardín y mobiliario adaptado.</p>
+                            <span class="room-price">Desde $2.999.999/mes</span>
                         </div>
                     </article>
-                    <article class="blog-card">
-                        <img src="/images/blog-adaptacion.jpg" alt="Tips para la adaptación del adulto mayor" loading="lazy">
-                        <div class="blog-card-content">
-                            <span class="blog-category">Consejos</span>
-                            <h3>Claves para una adaptación exitosa</h3>
-                            <p>Estrategias para que la transición sea más llevadera para todos.</p>
-                            <a href="/blog/adaptacion-exitosa" class="service-link">Leer más →</a>
+                    <article class="room-card">
+                        <img src="/images/habitacion-doble.jpg" alt="Habitación doble" loading="lazy">
+                        <div class="room-card-content">
+                            <h3>Habitación Doble</h3>
+                            <p>Ambiente compartido con otro residente, ideal para parejas o quienes disfrutan de la compañía.</p>
+                            <span class="room-price">Desde $2.099.000/mes</span>
+                        </div>
+                    </article>
+                    <article class="room-card">
+                        <img src="/images/suite.jpg" alt="Suite Premium" loading="lazy">
+                        <div class="room-card-content">
+                            <h3>Suite Premium</h3>
+                            <p>Habitación amplia con living privado, baño adaptado y terraza con vista al parque.</p>
+                            <span class="room-price">Desde $3.499.000/mes</span>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- ====== SECCIÓN 5: TESTIMONIOS ====== -->
-        <section class="testimonials" aria-labelledby="testimonials-title">
+        <!-- ====== TESTIMONIOS ====== -->
+        <section class="section testimonials" id="testimonios">
             <div class="container">
                 <div class="section-header">
-                    <h2 id="testimonials-title">Lo que dicen las familias</h2>
-                    <p class="section-subtitle">Experiencias reales de quienes confiaron en nosotros</p>
+                    <h2>Testimonios</h2>
+                    <p class="section-subtitle">Lo que las familias dicen de nosotros</p>
                 </div>
                 <div class="testimonials-grid">
                     <blockquote class="testimonial-card">
-                        <p>"Desde el primer día, mi madre se sintió en casa. El equipo es increíblemente cálido y profesional."</p>
+                        <p>"Mi madre llegó con miedo y hoy no quiere irse. La atención es increíble, se nota que les importa de verdad."</p>
                         <cite>
                             <span class="testimonial-name">María E.</span>
                             <span class="testimonial-relation">Hija de residente</span>
                         </cite>
                     </blockquote>
                     <blockquote class="testimonial-card">
-                        <p>"La atención personalizada y la calidad humana hacen la diferencia. Estamos muy agradecidos."</p>
+                        <p>"El equipo humano es excepcional. Siempre están atentos a cualquier necesidad, nos dan una tranquilidad enorme."</p>
                         <cite>
                             <span class="testimonial-name">Carlos G.</span>
                             <span class="testimonial-relation">Sobrino de residente</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"Los talleres de estimulación cognitiva son maravillosos. Mi papá está más activo y feliz que nunca."</p>
+                        <cite>
+                            <span class="testimonial-name">Laura R.</span>
+                            <span class="testimonial-relation">Hija de residente</span>
                         </cite>
                     </blockquote>
                 </div>
             </div>
         </section>
 
-        <!-- ====== SECCIÓN 6: CTA FINAL (Conversión) ====== -->
-        <section class="cta-final" aria-labelledby="cta-title">
-            <div class="container cta-content">
-                <h2 id="cta-title">¿Querés conocer nuestro hogar?</h2>
-                <p>Te invitamos a recorrer las instalaciones y conocer a nuestro equipo. La mejor forma de decidir es verlo en persona.</p>
-                <a href="/contacto" class="btn btn-primary btn-lg">Solicitar una visita</a>
+        <!-- ====== CONTACTO Y UBICACIÓN ====== -->
+        <section class="section contact" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contactanos</h2>
+                    <p class="section-subtitle">Estamos para ayudarte. Visitanos o escribinos</p>
+                </div>
+                <div class="contact-grid">
+                    <!-- Datos de contacto -->
+                    <div class="contact-info">
+                        <h3>Información de contacto</h3>
+                        <ul class="contact-list">
+                            <li><strong>📍 Dirección:</strong> Calle Ejemplo 1234, Córdoba</li>
+                            <li><strong>📞 Teléfono:</strong> <a href="tel:+543511234567">+54 351 1234567</a></li>
+                            <li><strong>✉️ Email:</strong> <a href="mailto:info@residencia.com">info@residencia.com</a></li>
+                            <li><strong>🕒 Horario:</strong> Atención 24hs / Visitas con cita previa</li>
+                        </ul>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Instagram">📸</a>
+                            <a href="#" aria-label="YouTube">▶️</a>
+                        </div>
+                    </div>
+
+                    <!-- Mapa de ubicación -->
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.249963661456!2d-64.1888485!3d-31.4200815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a2868b8b6d4f%3A0x2f89d8c8f8f8f8f8!2sC%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses!2sar!4v1700000000000" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 12px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ausonia ">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- ====== CTA FINAL ====== -->
+        <section class="cta-final">
+            <div class="container cta-content">
+                <h2>¿Querés conocer nuestro hogar?</h2>
+                <p>Te invitamos a recorrer las instalaciones y conocer a nuestro equipo. La mejor forma de decidir es verlo en persona.</p>
+                <a href="https://wa.me/543511234567?text=Hola%20quiero%20conocer%20la%20residencia" 
+                   class="btn btn-whatsapp btn-lg" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    💬 Consultar por WhatsApp
+                </a>
+            </div>
+        </section>
+
     </main>
 
     <!-- ========================================== -->
-    <!-- PIE DE PÁGINA (FOOTER)                     -->
+    <!-- PIE DE PÁGINA (Footer)                     -->
     <!-- ========================================== -->
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer">
         <div class="container footer-grid">
-            <!-- Columna 1: Información de contacto -->
             <div class="footer-col">
-                <img src="/images/logo-white.svg" alt="Logo Residencia [Nombre]" width="150" height="40">
+                <img src="/images/logo-white.svg" alt="Residencia [Nombre]" width="140" height="40">
                 <address>
-                    <p>📍 Calle Ejemplo 1234, Córdoba</p>
+                    <p>📍 Ausonia , Córdoba</p>
                     <p>📞 <a href="tel:+543511234567">+54 351 1234567</a></p>
-                    <p>✉️ <a href="mailto:info@residencia.com">info@residencia.com</a></p>
+                    <p>✉️ <a href="maildeejemplo">info@residencia.com</a></p>
                 </address>
             </div>
-            <!-- Columna 2: Enlaces rápidos -->
             <div class="footer-col">
                 <h3>Explorar</h3>
                 <ul>
-                    <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="/habitaciones">Habitaciones</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
+                    <li><a href="#la-residencia">La Residencia</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#habitaciones">Habitaciones</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                 </ul>
             </div>
-            <!-- Columna 3: Legal y redes sociales -->
             <div class="footer-col">
                 <h3>Legal</h3>
                 <ul>
-                    <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
-                    <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
                 </ul>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook">📘</a>
-                    <a href="#" aria-label="Instagram">📸</a>
-                    <a href="#" aria-label="YouTube">▶️</a>
-                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Residencia [Nombre]. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Residencia [Nombre]. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- ========================================== -->
-    <!-- SCRIPTS (Carga al final para no bloquear)  -->
+    <!-- BOTÓN FLOTANTE DE WHATSAPP                -->
     <!-- ========================================== -->
+    <a href="https://wa.me/543511234567?text=Hola%20quiero%20conocer%20la%20residencia" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+        💬
+    </a>
+
     <script src="app.js" defer></script>
 </body>
 </html>
