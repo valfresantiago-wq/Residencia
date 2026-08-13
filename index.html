@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 1. SEO BÁSICO: Título y Descripción -->
+    <title>Residencia [Nombre] · Cuidado y Bienestar para Adultos Mayores en Córdoba</title>
+    <meta name="description" content="Encontrá el lugar ideal para tus padres en Córdoba. Atención personalizada, 24hs, en un entorno cálido y familiar. Conocé nuestros servicios y planes.">
+    <meta name="robots" content="index, follow">
+
+    <!-- 2. OPEN GRAPH (Para compartir en redes sociales) -->
+    <meta property="og:title" content="Residencia [Nombre] · Un hogar para quienes más querés">
+    <meta property="og:description" content="Cuidado integral para adultos mayores en Córdoba. Ambientes cálidos, atención profesional y mucha contención.">
+    <meta property="og:image" content="https://tusitio.com/images/og-image.jpg">
+    <meta property="og:url" content="https://tusitio.com">
+    <meta property="og:type" content="website">
+
+    <!-- 3. SCHEMA MARKUP (Datos estructurados para Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Residencia [Nombre]",
+      "description": "Centro de cuidado y atención para adultos mayores en Córdoba.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Ejemplo 1234",
+        "addressLocality": "Córdoba",
+        "addressRegion": "Córdoba",
+        "addressCountry": "AR"
+      },
+      "telephone": "+543511234567",
+      "url": "https://tusitio.com"
+    }
+    </script>
+
+    <!-- 4. FUENTES Y ESTILOS (Carga rápida y progresiva) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- 5. ESTILOS CRÍTICOS (Inline para que el Hero cargue rápido) -->
+    <style>
+        /* Reset básico y variables de diseño */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #f8fafc; color: #0f172a; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; }
+    </style>
+
+    <!-- 6. ICONO Y FAVICON -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- ========================================== -->
+    <!-- CABECERA (HEADER) - Navegación principal    -->
+    <!-- ========================================== -->
+    <header class="site-header" role="banner">
+        <div class="container header-grid">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="/" aria-label="Inicio - Residencia [Nombre]">
+                    <img src="/images/logo.svg" alt="Logo Residencia [Nombre]" width="180" height="50">
+                </a>
+            </div>
+
+            <!-- Navegación -->
+            <nav class="main-nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="/#la-residencia">La Residencia</a></li>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="/habitaciones">Habitaciones</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contacto" class="btn btn-primary">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botón de menú móvil (Hamburguesa) -->
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- CONTENIDO PRINCIPAL (MAIN)                  -->
+    <!-- ========================================== -->
+    <main id="main-content">
+
+        <!-- ====== SECCIÓN 1: HERO ====== -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-background">
+                <!-- Imagen de fondo (se carga con CSS como background-image) -->
+            </div>
+            <div class="container hero-content">
+                <h1 id="hero-title" class="hero-title">
+                    Un hogar para <br>
+                    <span class="hero-title-highlight">quienes más querés</span>
+                </h1>
+                <p class="hero-description">
+                    Cuidado integral, calidez y atención personalizada para tus padres en el corazón de Córdoba.
+                </p>
+                <div class="hero-actions">
+                    <a href="/contacto" class="btn btn-primary btn-lg">Agendar una visita</a>
+                    <a href="/servicios" class="btn btn-outline btn-lg">Conocer más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SECCIÓN 2: ESTADÍSTICAS ====== -->
+        <section class="stats" aria-label="Estadísticas de la residencia">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="10">0</span>
+                    <span class="stat-label">Años de experiencia</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label">Familias que confían</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span>
+                    <span class="stat-label">Atención las 24hs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-label">% de satisfacción</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SECCIÓN 3: SERVICIOS DESTACADOS ====== -->
+        <section class="services" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="services-title">Nuestros Servicios</h2>
+                    <p class="section-subtitle">Cuidado integral en un ambiente de contención y respeto</p>
+                </div>
+                <div class="services-grid">
+                    <!-- Servicio 1 -->
+                    <article class="service-card">
+                        <div class="service-icon">🫶</div>
+                        <h3>Cuidados 24hs</h3>
+                        <p>Acompañamiento profesional con enfermería y geriatría disponible todos los días del año.</p>
+                        <a href="/servicios/cuidados" class="service-link">Ver más →</a>
+                    </article>
+                    <!-- Servicio 2 -->
+                    <article class="service-card">
+                        <div class="service-icon">🧠</div>
+                        <h3>Estimulación Cognitiva</h3>
+                        <p>Talleres diseñados para mantener activa la mente, la memoria y las habilidades sociales.</p>
+                        <a href="/servicios/estimulacion" class="service-link">Ver más →</a>
+                    </article>
+                    <!-- Servicio 3 -->
+                    <article class="service-card">
+                        <div class="service-icon">🍲</div>
+                        <h3>Nutrición Personalizada</h3>
+                        <p>Menús equilibrados y adaptados a las necesidades de cada residente, con supervisión médica.</p>
+                        <a href="/servicios/nutricion" class="service-link">Ver más →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SECCIÓN 4: BLOG / RECURSOS ====== -->
+        <section class="blog-preview" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="blog-title">Recursos para tu familia</h2>
+                    <p class="section-subtitle">Consejos y guías para acompañar a tus padres en esta nueva etapa</p>
+                </div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <img src="/images/blog-guia.jpg" alt="Guía para elegir una residencia" loading="lazy">
+                        <div class="blog-card-content">
+                            <span class="blog-category">Guía</span>
+                            <h3>Cómo elegir la residencia ideal</h3>
+                            <p>Una guía paso a paso para tomar la mejor decisión para tus padres.</p>
+                            <a href="/blog/como-elegir-residencia" class="service-link">Leer más →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="/images/blog-adaptacion.jpg" alt="Tips para la adaptación del adulto mayor" loading="lazy">
+                        <div class="blog-card-content">
+                            <span class="blog-category">Consejos</span>
+                            <h3>Claves para una adaptación exitosa</h3>
+                            <p>Estrategias para que la transición sea más llevadera para todos.</p>
+                            <a href="/blog/adaptacion-exitosa" class="service-link">Leer más →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SECCIÓN 5: TESTIMONIOS ====== -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <h2 id="testimonials-title">Lo que dicen las familias</h2>
+                    <p class="section-subtitle">Experiencias reales de quienes confiaron en nosotros</p>
+                </div>
+                <div class="testimonials-grid">
+                    <blockquote class="testimonial-card">
+                        <p>"Desde el primer día, mi madre se sintió en casa. El equipo es increíblemente cálido y profesional."</p>
+                        <cite>
+                            <span class="testimonial-name">María E.</span>
+                            <span class="testimonial-relation">Hija de residente</span>
+                        </cite>
+                    </blockquote>
+                    <blockquote class="testimonial-card">
+                        <p>"La atención personalizada y la calidad humana hacen la diferencia. Estamos muy agradecidos."</p>
+                        <cite>
+                            <span class="testimonial-name">Carlos G.</span>
+                            <span class="testimonial-relation">Sobrino de residente</span>
+                        </cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== SECCIÓN 6: CTA FINAL (Conversión) ====== -->
+        <section class="cta-final" aria-labelledby="cta-title">
+            <div class="container cta-content">
+                <h2 id="cta-title">¿Querés conocer nuestro hogar?</h2>
+                <p>Te invitamos a recorrer las instalaciones y conocer a nuestro equipo. La mejor forma de decidir es verlo en persona.</p>
+                <a href="/contacto" class="btn btn-primary btn-lg">Solicitar una visita</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- PIE DE PÁGINA (FOOTER)                     -->
+    <!-- ========================================== -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+            <!-- Columna 1: Información de contacto -->
+            <div class="footer-col">
+                <img src="/images/logo-white.svg" alt="Logo Residencia [Nombre]" width="150" height="40">
+                <address>
+                    <p>📍 Calle Ejemplo 1234, Córdoba</p>
+                    <p>📞 <a href="tel:+543511234567">+54 351 1234567</a></p>
+                    <p>✉️ <a href="mailto:info@residencia.com">info@residencia.com</a></p>
+                </address>
+            </div>
+            <!-- Columna 2: Enlaces rápidos -->
+            <div class="footer-col">
+                <h3>Explorar</h3>
+                <ul>
+                    <li><a href="/servicios">Servicios</a></li>
+                    <li><a href="/habitaciones">Habitaciones</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <!-- Columna 3: Legal y redes sociales -->
+            <div class="footer-col">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="/politica-de-privacidad">Política de Privacidad</a></li>
+                    <li><a href="/terminos-y-condiciones">Términos y Condiciones</a></li>
+                </ul>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="YouTube">▶️</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Residencia [Nombre]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- SCRIPTS (Carga al final para no bloquear)  -->
+    <!-- ========================================== -->
+    <script src="app.js" defer></script>
+</body>
+</html>
