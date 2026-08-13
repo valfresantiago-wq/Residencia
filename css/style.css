@@ -620,4 +620,37 @@ a {
     .hero-title {
         font-size: 2rem;
     }
+   /* ==========================================
+   ANIMACIÓN DE FLOTACIÓN (ANTIGRAVITY)
+========================================== */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.float {
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Variante más suave y lenta (para elementos de fondo) */
+.float-slow {
+    animation: float 7s ease-in-out infinite;
+}
+
+/* Variante más rápida (para elementos que quieres que destaquen) */
+.float-fast {
+    animation: float 3.5s ease-in-out infinite;
+}
+
+/* Pequeño retraso para que no floten todos al mismo tiempo */
+.float-delay-1 { animation-delay: 0.5s; }
+.float-delay-2 { animation-delay: 1.2s; }
+.float-delay-3 { animation-delay: 2.5s; }
 }
