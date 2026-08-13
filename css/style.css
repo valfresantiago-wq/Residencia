@@ -169,7 +169,7 @@ a {
     overflow: hidden;
 }
 
-.hero-background {
+.hero-overlay {
     position: absolute;
     inset: 0;
 
