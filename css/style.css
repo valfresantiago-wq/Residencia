@@ -116,8 +116,10 @@ a {
 }
 
 .logo img {
-    height: 45px;
-    width: auto;
+    width: 210px;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .nav-list {
