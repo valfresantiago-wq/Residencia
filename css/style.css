@@ -238,7 +238,7 @@ a {
 
 .float-soft {
     display: inline-block;
-    animation: heroFloatTest 2.5s ease-in-out infinite !important
+    animation: heroFloatTest 4.5s ease-in-out infinite !important;
     will-change: transform;
 }
 
@@ -248,7 +248,7 @@ a {
     }
 
     50% {
-        transform: translateY(-25px);
+        transform: translateY(-10px);
     }
 }
 
