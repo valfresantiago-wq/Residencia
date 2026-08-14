@@ -238,17 +238,17 @@ a {
 
 .float-soft {
     display: inline-block;
-    animation: floatSoft 3.5s ease-in-out infinite;
+    animation: heroFloatTest 2.5s ease-in-out infinite !important
     will-change: transform;
 }
 
-@keyframes floatSoft {
+@keyframes heroFloatTest {
     0%, 100% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-16px);
+        transform: translateY(-25px);
     }
 }
 
