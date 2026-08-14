@@ -237,20 +237,18 @@ a {
 }
 
 .float-soft {
-    animation: floatSoft 6s ease-in-out infinite;
+    display: inline-block;
+    animation: floatSoft 3.5s ease-in-out infinite;
+    will-change: transform;
 }
 
 @keyframes floatSoft {
-    0% {
+    0%, 100% {
         transform: translateY(0);
     }
 
     50% {
-        transform: translateY(-8px);
-    }
-
-    100% {
-        transform: translateY(0);
+        transform: translateY(-16px);
     }
 }
 
