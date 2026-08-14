@@ -727,6 +727,7 @@ a {
     .hero-title {
         font-size: 2rem;
     }
+   
    /* ==========================================
    ANIMACIÓN DE FLOTACIÓN (ANTIGRAVITY)
 ========================================== */
@@ -760,4 +761,22 @@ a {
 .float-delay-1 { animation-delay: 0.5s; }
 .float-delay-2 { animation-delay: 1.2s; }
 .float-delay-3 { animation-delay: 2.5s; }
+}
+/* ==========================================
+   ANTIGRAVITY HERO
+========================================== */
+
+.hero h1 {
+    animation: heroAntigravity 2.5s ease-in-out infinite !important;
+    will-change: transform;
+}
+
+@keyframes heroAntigravity {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
 }
