@@ -236,6 +236,24 @@ a {
     color: white;
 }
 
+.float-soft {
+    animation: floatSoft 6s ease-in-out infinite;
+}
+
+@keyframes floatSoft {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .hero-description {
     max-width: 580px;
 
